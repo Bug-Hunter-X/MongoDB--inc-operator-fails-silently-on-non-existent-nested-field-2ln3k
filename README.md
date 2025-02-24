@@ -1,0 +1,3 @@
+# MongoDB $inc operator fails silently on non-existent nested fields
+
+This example demonstrates a common issue when using the `$inc` operator with nested fields in MongoDB. If the nested field does not exist, the operation fails silently without throwing an error or updating the document.  This can lead to hard-to-debug issues. The solution shows how to use the `$setOnInsert` and `$inc` operators together to handle cases where the nested field is missing.
